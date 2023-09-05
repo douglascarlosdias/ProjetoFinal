@@ -15,6 +15,13 @@
         <p>email: <input type="email" name="email" id=""></p>
         <p><input type="submit" value="enviar"></p>
     </form>
+    <table>
+        <tr>
+            <td>carro</td>
+            <td>moto</td>
+            <td>caminhão</td>
+        </tr>
+    </table>
     
 </body>
 </html>
