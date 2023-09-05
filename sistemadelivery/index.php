@@ -8,6 +8,7 @@
 <body>
     <h1>meu primeiro commit no git </h1>
     <h2>meu segundo commit</h2>
+    <h3>alterado no vs code</h3>
     
 </body>
 </html>
