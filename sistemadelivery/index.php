@@ -6,16 +6,14 @@
     <title>Pizzaria delivery</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li> <a href="#">Cardápio</a></li>
-                <li>promoções</li>
-                <li>localização</li>
-                <li>login</li>
-            </ul>
-        </nav>
-    </header>
-   
+<img src="" alt="">
+    <nav>
+   <span><a href="#">Cardápio</a></span>
+   <span><a href="#">Promoções</a></span>
+   <span><a href="#">Quem Somos</a></span>
+   <span><a href="#">Localização</a></span>
+   <span><a href="#">login</a></span>
+</nav>
+  
 </body>
 </html>
