@@ -15,7 +15,5 @@
    <span><a href="#">Localização</a></span>
    <span><a href="#">login</a></span>
 </nav>
-  <h1>ola</h1>
-  <h2>ola</h2>
 </body>
 </html>
