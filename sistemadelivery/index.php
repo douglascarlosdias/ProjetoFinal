@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizzaria delivery</title>
-  <link rel="stylesheet" href="">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+  <title>home</title>
 </head>
 <body>
 
-    <nav>
-   <span><a href="#">Cardápio</a></span>
-   <span><a href="#">Promoções</a></span>
-   <span><a href="#">Quem Somos</a></span>
-   <span><a href="#">Localização</a></span>
-   <span><a href="#">login</a></span>
-</nav>
+
+
+
+
+
+
+
+
+
+
+
+  
 </body>
 </html>
