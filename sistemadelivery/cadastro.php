@@ -16,6 +16,7 @@
         <legend>Dados para cadastro</legend>
         <p>Nome: <input type="text" name="nome" id="" required autofocus></p>
         <p>Telefone: <input type="text" name="telefone" id="" required autofocus></p>
+        <p>Email: <input type="email" name="email" id="" required autofocus></p>
    <fieldset>
  <legend>Dados de Endereço:</legend>
     <label for="rua">Rua:</label>

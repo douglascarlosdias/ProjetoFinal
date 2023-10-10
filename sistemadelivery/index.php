@@ -18,9 +18,9 @@
                 <li><a href="">Home</a></li>
                 <li><a href="">Promoções </a></li>
                 <li><a href="">Cardápio</a></li>
-                <li><a href="cadastro.php">Cadastro</a></li>
+                <li><a href="cadastro.php"> Cadastro</a></li>
                 <li><a href="login.php">Login</a></li>
-                <li><a href="">Carrinho</a></li>
+                <li><a href=""><img src="img/Carrinho_de_Compras.png" alt="" width="50"></a></li>
             </ul>
         </nav>
     </div>
