@@ -20,8 +20,8 @@
                   </div>
                   <div class="col-sm-6">
                     <div class="form-wrap">
-                      <input class="form-input" id="contact-last-name" type="text" name="telefone" data-constraints="@Required" >
-                      <label class="form-label" for="contact-last-name">telefone</label>
+                      <input class="form-input" id="contact-last-name" type="telefone" name="telefone" data-constraints="@Required" >
+                      <label class="form-label" for="contact-last-name">Whatsapp</label>
                     </div>
                   </div>
                   
@@ -34,7 +34,7 @@
                   <div class="col-12">
                     <div class="form-wrap">
                       <label class="form-label" for="contact-message">Mensagem</label>
-                      <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea>
+                      <textarea class="form-input" id="contact-message" name="mensagem" data-constraints="@Required"></textarea>
                     </div>
                   </div>
                 </div>

@@ -352,19 +352,19 @@
 			var regularConstraintsMessages = [
 				{
 					type: regula.Constraint.Required,
-					newMessage: "The text field is required."
+					newMessage: "Campo obrigatório!"
 				},
 				{
 					type: regula.Constraint.Email,
-					newMessage: "The email is not a valid email."
+					newMessage: "Campo obrigatório!"
 				},
 				{
 					type: regula.Constraint.Numeric,
-					newMessage: "Only numbers are required"
+					newMessage: "Campo obrigatório!"
 				},
 				{
 					type: regula.Constraint.Selected,
-					newMessage: "Please choose an option."
+					newMessage: "Campo obrigatório!"
 				}
 			];
 
@@ -923,13 +923,13 @@
 		if (plugins.rdMailForm.length) {
 			var i, j, k,
 				msg = {
-					'MF000': 'Successfully sent!',
-					'MF001': 'Recipients are not set!',
-					'MF002': 'Form will not work locally!',
-					'MF003': 'Please, define email field in your form!',
-					'MF004': 'Please, define type of your form!',
-					'MF254': 'Something went wrong with PHPMailer!',
-					'MF255': 'Aw, snap! Something went wrong.'
+					'MF000': 'Enviado com sucesso!',
+					'MF001': 'Destinatário nao definido!',
+					'MF002': 'Erro ao enviar!',
+					'MF003': 'Por favor, insira o email no formulário!',
+					'MF004': 'Erro ao enviar!',
+					'MF254': 'Erro ao enviar!',
+					'MF255': 'Voce nao pode enviar email estando em um servidor local!.'
 				};
 
 			for (i = 0; i < plugins.rdMailForm.length; i++) {
