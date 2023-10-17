@@ -8,7 +8,7 @@
 <body>
     <form action="" method="post">
         <fieldset>
-            <legend></Datag>ados cadastro:</legend>
+            <legend></Datag>Dados cadastro:</legend>
         </fieldset>
 
 
