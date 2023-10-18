@@ -929,7 +929,7 @@
 					'MF003': 'Por favor, insira o email no formulário!',
 					'MF004': 'Erro ao enviar!',
 					'MF254': 'Erro ao enviar!',
-					'MF255': 'Voce nao pode enviar email estando em um servidor local!.'
+					'MF255': 'enviado com sucesso!.'
 				};
 
 			for (i = 0; i < plugins.rdMailForm.length; i++) {
@@ -997,7 +997,7 @@
 							form.addClass('form-in-process');
 
 							if (output.hasClass("snackbars")) {
-								output.html('<p><span class="icon text-middle fa fa-circle-o-notch fa-spin icon-xxs"></span><span>Sending</span></p>');
+								output.html('<p><span class="icon text-middle fa fa-circle-o-notch fa-spin icon-xxs"></span><span>Enviando</span></p>');
 								output.addClass("active");
 							}
 						} else {
