@@ -31,9 +31,9 @@
                   <div class="inset-top-18 wow slideInDown" data-wow-delay="0s">
                     <h5>cadastre-se</h5>
                     <p>Insira seu email abaixo para se cadastrar em nosso delivery:</p>
-                    <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php">
+                    <form class="rd-form" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="login.php">
                       <div class="form-wrap">
-                        <input class="form-input" id="subscribe-form-5-email" type="email" name="email" data-constraints="@Email @Required">
+                        <input class="form-input" id="subscribe-form-5-email" type="email" name="email2" data-constraints="@Email @Required">
                         <label class="form-label" for="subscribe-form-5-email">Digite seu email</label>
                       </div>
                       <button class="button button-block button-white" type="submit">cadastrar</button>

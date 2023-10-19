@@ -1,12 +1,6 @@
-<?php 
-
-if(isset($_POST['email2']) and $_POST['email2'] != ''){
-    $email_rec = $_POST['email2'];
-}
- ?>
 
 <head>
-    <title>Tio goga pizzaria</title>
+    <title>Tio Gôga Pizzaria</title>
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
@@ -16,6 +10,7 @@ if(isset($_POST['email2']) and $_POST['email2'] != ''){
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
+    <link rel="icon" href="images/logo.jpg" type="image/x-icon">
 
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link href="css/login.css" rel="stylesheet" id="bootstrap-css">
@@ -75,7 +70,7 @@ if(isset($_POST['email2']) and $_POST['email2'] != ''){
 
                     <div class="copy-text">Não tem Cadastro?
 
-                        <a class="text-primary" href="" data-toggle="modal" data-target="#modal-login">Cadastre-se</a>
+                        <a class="text-primary"  href="" data-toggle="modal" data-target="#modal-login">Cadastre-se</a>
                     </div>
 
                     <div class="text-center p-t-8 p-b-31">
@@ -116,6 +111,10 @@ if(isset($_POST['email2']) and $_POST['email2'] != ''){
 </body>
 
 
+
+
+
+
 <div class="modal fade" id="modal-login" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -130,6 +129,11 @@ if(isset($_POST['email2']) and $_POST['email2'] != ''){
         <div class="form-group">
             <label class="text-dark" for="exampleInputEmail1">Nome</label>
             <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome e Sobrenome" required>
+
+        </div>
+        <div class="form-group">
+            <label class="text-dark" for="exampleInputEmail1">Endereço</label>
+            <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Endereço" required>
 
         </div>
 
@@ -164,7 +168,7 @@ if(isset($_POST['email2']) and $_POST['email2'] != ''){
 
 <div class="form-group">
     <label class="text-dark" for="exampleInputEmail1">Senha</label>
-    <input type="text" class="form-control" id="senha" name="senha" placeholder="Senha" required>
+    <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha" required>
 
 </div>
 
@@ -184,6 +188,24 @@ if(isset($_POST['email2']) and $_POST['email2'] != ''){
 </div>
 </div>
 </div>
+
+
+<?php 
+
+
+if(isset($_POST['email2']) and $_POST['email2'] != ''){?>
+  <script> $("#modal-login").modal("show")</script>
+
+ ?>
+ <?php } ?>
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+
+<script src="js/mascaras.js"></script>
 
 
 
