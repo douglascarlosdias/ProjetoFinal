@@ -10,17 +10,17 @@
     $cpf = $_POST['cpf'];
     $telefone = $_POST['telefone'];
     $email = $_POST['email'];
-    $senha =$_POST['senha'];
+    $senha = $_POST['senha'];
 
     #fiz a impressão na tela para verificar se estava tudo ok .
-    echo "$nome,$endereco,$cpf,$telefone,$email,$senha";
+    echo "nome:$nome<br>endereço:$endereco<br>cpf:$cpf<br>telefone:$telefone<br>email:$email<br>senha:$senha<br>";
    
 
     # solicita a conexão com o banco de dados e guarda na váriavel dbh.
     $dbh = Conexao::getConexao();
 
     # cria uma instrução SQL para inserir dados na tabela usuarios.
-    $query = "INSERT INTO tiogogadelivery.usuarios (nome, endereço, cpf, telefone, usuario, senha,) 
+    $query = "INSERT INTO tiogogadelivery.usuarios (nome, endereço, cpf, telefone, email, senha,) 
                 VALUES (:nome, :endereco, :cpf, :telefone, :email, :senha);"; 
     
     # prepara a execução da query e retorna para uma variável chamada stmt.

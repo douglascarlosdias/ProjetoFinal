@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 21/10/2023 às 06:04
+-- Tempo de geração: 21/10/2023 às 16:07
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.2.4
 
@@ -33,9 +33,8 @@ CREATE TABLE `usuarios` (
   `cpf` varchar(20) NOT NULL,
   `endereço` varchar(80) NOT NULL,
   `telefone` varchar(20) NOT NULL,
-  `usuario` varchar(70) NOT NULL,
-  `senha` varchar(35) NOT NULL,
-  `nivel` varchar(20) NOT NULL
+  `email` varchar(70) NOT NULL,
+  `senha` varchar(35) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
