@@ -125,7 +125,7 @@
       </button>
   </div>
   <div class="modal-body">
-    <form method="post">
+    <form method="post" action="cadastro.php">
         <div class="form-group">
             <label class="text-dark" for="exampleInputEmail1">Nome</label>
             <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome e Sobrenome" required>

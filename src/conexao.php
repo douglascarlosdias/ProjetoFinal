@@ -1,15 +1,14 @@
-<?php 
+<?php
+class Conexao{
 
-include_once("config.php");
+    public static function getConexao()
+    {
+        try {
+            return new PDO("mysql:host=127.0.0.1;dbname=tiogogadelivery", "root", "");
 
-date_default_timezone_set('America/Sao_Paulo');
-
-try {
-	$pdo = new PDO("mysql:dbname=tiogogadelivery;host=$host", "$usuario", "$senha");
-
-	
-} catch (Exception $e) {
-	echo "Erro ao conectar com o banco de dados! ".$e;
+        }catch(\PDOException $e){
+            echo 'erro ao conectar com o banco de dados. ' .$e->getMessage();
+            return null;
+        }
+    }
 }
-
- ?>
