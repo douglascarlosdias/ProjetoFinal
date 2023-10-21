@@ -104,6 +104,7 @@
                       <li class="rd-nav-item"><a class="rd-nav-link" href="index.php">Inicio</a>
                       </li>
                       <li class="rd-nav-item"><a class="rd-nav-link" href="sobre.php">Sobre</a></li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="login.php">cadastre-se</a></li>
                       <li class="rd-nav-item"><a class="rd-nav-link" href="login.php" target="_blank">Login</a></li>
                       <li class="rd-nav-item"><a class="rd-nav-link" href="contatos.php">Contatos</a>
                       </li>

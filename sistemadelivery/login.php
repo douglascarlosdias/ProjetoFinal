@@ -154,17 +154,11 @@
         </div>
     </div>
 </div>
-
-
-
 <div class="form-group">
     <label class="text-dark" for="exampleInputEmail1">Email</label>
     <input type="email" class="form-control" id="email" name="email" placeholder="Email" required value="<?php echo @$email_rec ?>">
 
 </div>
-
-
-
 
 <div class="form-group">
     <label class="text-dark" for="exampleInputEmail1">Senha</label>
@@ -175,15 +169,11 @@
 
 <div align="center" class="" id="mensagem">
 </div>
-
-
 </div>
 <div class="modal-footer">
    <button type="button" id="btn-fechar" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
    <button name="btn-cadastro" id="btn-cadastro" class="btn btn-info">Cadastrar</button>
-
    </form>
-
 </div>
 </div>
 </div>
@@ -265,6 +255,16 @@ if(isset($_POST['email2']) and $_POST['email2'] != ''){
  <script> $("#modal-login").modal("show"); </script> 
 
 <?php } ?>
+<?php 
+
+if(isset($_POST['cadastro']) and $_POST['cadastro'] != ''){
+
+ ?>
+
+ <script> $("#modal-login").modal("show"); </script> 
+
+<?php } ?>
+
 
 
 
@@ -276,103 +276,3 @@ if(isset($_POST['email2']) and $_POST['email2'] != ''){
 
 
 
-<!--AJAX PARA INSERÇÃO DOS DADOS -->
-<script type="text/javascript">
-    $(document).ready(function(){
-        
-        $('#btn-cadastro').click(function(event){
-            event.preventDefault();
-            
-            $.ajax({
-                url: "cadastrar-usuario.php",
-                method: "post",
-                data: $('form').serialize(),
-                dataType: "text",
-                success: function(mensagem){
-
-                    $('#mensagem').removeClass()
-
-                    if(mensagem == 'Cadastrado com Sucesso!!'){
-                        
-                        $('#mensagem').addClass('text-success')
-
-                        document.getElementById('username').value = document.getElementById('email').value;
-
-                        document.getElementById('pass').value = document.getElementById('senha').value;
-
-                        $('#nome').val('')
-                        $('#telefone').val('')
-                        $('#cpf').val('')
-                        $('#email').val('')
-                        $('#senha').val('')
-
-                        //$('#btn-fechar').click();
-                        //location.reload();
-
-
-
-            
-           
-
-                    }else{
-                        
-                        $('#mensagem').addClass('text-danger')
-                    }
-                    
-                    $('#mensagem').text(mensagem)
-
-                },
-                
-            })
-        })
-    })
-</script>
-
-
-
-
-
-<!--AJAX PARA RECUPERAR A SENHA -->
-<script type="text/javascript">
-    $(document).ready(function(){
-        
-        $('#btn-rec').click(function(event){
-            event.preventDefault();
-            
-            $.ajax({
-                url: "recuperar.php",
-                method: "post",
-                data: $('form').serialize(),
-                dataType: "text",
-                success: function(mensagem){
-
-                    $('#mensagem2').removeClass()
-
-                    if(mensagem == 'Senha enviada para o seu Email!'){
-                        
-                        $('#mensagem2').addClass('text-success')
-
-                        document.getElementById('username').value = document.getElementById('email-recuperar').value;
-
-                       
-                        $('#email-recuperar').val('')
-                        
-
-                        //$('#btn-fechar').click();
-                        //location.reload();
-
-
-
-                    }else{
-                        
-                        $('#mensagem2').addClass('text-danger')
-                    }
-                    
-                    $('#mensagem2').text(mensagem)
-
-                },
-                
-            })
-        })
-    })
-</script>
