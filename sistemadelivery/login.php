@@ -130,7 +130,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" id="btn-fechar" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                <button name="btn-cadastro" id="btn-cadastro" class="btn btn-info">Cadastrar</button>
+                <button type="submit" name="btn-cadastro" id="btn-cadastro" class="btn btn-info">Cadastrar</button>
                 </form>
             </div>
         </div>
