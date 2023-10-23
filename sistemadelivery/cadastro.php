@@ -20,7 +20,7 @@ echo "nome:$nome<br>endereço:$endereco<br>cpf:$cpf<br>telefone:$telefone<br>ema
 $dbh = Conexao::getConexao();
 
 # cria uma instrução SQL para inserir dados na tabela usuarios.
-$query = "INSERT INTO tiogogadelivery.usuarios (nome, endereço, cpf, telefone, email, senha,) 
+$query = "INSERT INTO tiogogadelivery.usuarios (nome, endereco, cpf, telefone, email, senha) 
                 VALUES (:nome, :endereco, :cpf, :telefone, :email, :senha);";
 
  #prepara a execução da query e retorna para uma variável chamada stmt.
