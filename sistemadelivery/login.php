@@ -14,7 +14,8 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link href="css/login.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" href="css/fonts.css">
-    <link rel="icon" href="images/logo.jpg" type="image/x-icon">
+    <link rel="icon"  href="images/logo.jpg" type="image/x-icon" >
+    
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 
@@ -71,7 +72,7 @@
                         <div id="demo" class="carousel slide carousel-fade" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="images/logo.jpg" height="100%" width="100%">
+                                    <a href="index.php"><img src="images/logo.jpg " title="voltar a página inicial" height="100%" width="100%"></a>
                                 </div>
                             </div>
                         </div>

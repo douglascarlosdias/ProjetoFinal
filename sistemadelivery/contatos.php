@@ -21,7 +21,7 @@
             <div class="col-sm-6">
               <div class="form-wrap">
                 <input class="form-input" id="contact-last-name" type="telefone" name="telefone" data-constraints="@Required">
-                <label class="form-label" for="contact-last-name">Whatsapp</label>
+                <label class="form-label" for="contact-last-name">telefone</label>
               </div>
             </div>
 
@@ -89,9 +89,8 @@
 <script src="js/core.min.js"></script>
 <script src="js/script.js"></script>
 </body>
-
-</html>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
 
 <script src="js/mascaras.js"></script>
+
+</html>
