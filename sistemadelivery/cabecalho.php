@@ -49,7 +49,7 @@
                     <button class="rd-navbar-basket fl-bigmug-line-shopping198" data-rd-navbar-toggle=".cart-inline"><span>2</span></button>
                     <div class="cart-inline">
                       <div class="cart-inline-header">
-                        <!-- inclusao do nome do usuario dentro do carrinho e da classe css no arquivo style.css linha 12269 -->
+                        <!-- inclusao do nome do usuario dentro do carrinho e da classe css no arquivo style.css linha 12269  e identificação do usuário logado!-->
                         <span class="dados-usuarios">
                           <p>
                             <a href="#" title="Clique aqui para editar seus dados">
@@ -59,6 +59,7 @@
                             </a>
                           </p>
                         </span>
+                        <!--  -->
                         <h5 class="cart-inline-title">Carrinho:<span> 2</span> Produtos</h5>
                         <h6 class="cart-inline-title">Valor Total:<span> $800</span></h6>
                       </div>
