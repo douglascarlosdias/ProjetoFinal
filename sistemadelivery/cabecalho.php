@@ -1,3 +1,4 @@
+<?php @session_start(); ?>
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="pt-br">
 
@@ -48,6 +49,16 @@
                     <button class="rd-navbar-basket fl-bigmug-line-shopping198" data-rd-navbar-toggle=".cart-inline"><span>2</span></button>
                     <div class="cart-inline">
                       <div class="cart-inline-header">
+                        <!-- inclusao do nome do usuario dentro do carrinho e da classe css no arquivo style.css linha 12269 -->
+                        <span class="dados-usuarios">
+                          <p>
+                            <a href="#" title="Clique aqui para editar seus dados">
+                            <?php echo $_SESSION['nome_usuario'] ?></a>
+                            <a href="logout.php" title="Sair">
+                              <img src="images/logout.png" alt="" width="20px">
+                            </a>
+                          </p>
+                        </span>
                         <h5 class="cart-inline-title">Carrinho:<span> 2</span> Produtos</h5>
                         <h6 class="cart-inline-title">Valor Total:<span> $800</span></h6>
                       </div>
@@ -106,8 +117,12 @@
                     <li class="rd-nav-item"><a class="rd-nav-link" href="index.php">Inicio</a>
                     </li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="sobre.php">Sobre</a></li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="login.php" target="_blank">cadastre-se</a></li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="login.php" target="_blank">Login</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="login.php" target="_blank">Cadastre-se</a></li>
+                    <!-- inclusao para identificar se existe uma sessão com o nome de usuário -->
+                    <?php if (!isset($_SESSION['nome_usuario'])) {
+                      echo '<li class="rd-nav-item"><a class="rd-nav-link" href="login.php" target="_blank">Login</a></li>';
+                    } ?>
+
                     <li class="rd-nav-item"><a class="rd-nav-link" href="contatos.php">Contatos</a>
                     </li>
                   </ul>

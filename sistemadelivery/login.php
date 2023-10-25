@@ -38,15 +38,15 @@
             <div class="row">
                 <div class="col-md-4 login-sec">
                     <h5 class="text-center mb-4">Faça seu Login</h5>
-                    <form class="login100-form validate-form" method="post" action="">
+                    <form class="login100-form validate-form" method="post" action="autenticar.php">
                         <div class="wrap-input100 validate-input">
                             <span class="label-input100">Usuário</span><br>
-                            <input class="input100" type="text" name="username" id="username" placeholder="Insira seu Email" required>
+                            <input class="input100" type="text" name="email" id="username" placeholder="Insira seu Email" required>
                             <span class="focus-input100"></span>
                         </div>
                         <div class="wrap-input100 validate-input">
                             <span class="label-input100">Senha</span>
-                            <input class="input100" type="password" id="pass" name="pass" placeholder="Insira sua Senha" required>
+                            <input class="input100" type="password" id="pass" name="senha" placeholder="Insira sua Senha" required>
                             <span class="focus-input100 password"></span>
                         </div>
                         <div class="container-login100-form-btn">
@@ -72,7 +72,7 @@
                         <div id="demo" class="carousel slide carousel-fade" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <a href="index.php"><img src="images/logo.jpg " title="voltar a página inicial" height="100%" width="100%"></a>
+                                    <a href="index.php"><img src="images/logo.jpg " title="voltar para a página inicial" height="100%" width="100%"></a>
                                 </div>
                             </div>
                         </div>
@@ -146,7 +146,7 @@ if (isset($_POST['email2']) and $_POST['email2'] != '') { ?>
         $("#modal-login").modal("show")
     </script>
 
-    ?>
+    
 <?php } ?>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
